@@ -42,7 +42,7 @@ Spin-Release:
     - name: Install nightly Rust
         uses: dtolnay/rust-toolchain@nightly
         with:
-        components: clippy, rustfmt
+            components: clippy, rustfmt
 
     - name: Add WASM & WASI targets
         run: rustup target add wasm32-unknown-unknown && rustup target add wasm32-wasi
@@ -78,7 +78,7 @@ Spin-Release:
         working-directory: ./web-leptos
         uses: fermyon/actions/spin/deploy@v1
         with:
-        fermyon_token: ${{ secrets.FERMYON_CLOUD_TOKEN }}
+            fermyon_token: ${{ secrets.FERMYON_CLOUD_TOKEN }}
         # key_values: |-
             # abc=xyz
             # foo=bar
