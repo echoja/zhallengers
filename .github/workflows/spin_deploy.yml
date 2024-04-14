@@ -82,4 +82,4 @@ jobs:
       # Create an explicit message to display the URL of the deployed app, as well as in the job graph
       - name: Deployed URL
         run: |
-        echo "Deployed app URL: ${{ steps.deployment.outputs.app-url }}" >> $GITHUB_STEP_SUMMARY
+          echo "Deployed app URL: ${{ steps.deployment.outputs.app-url }}" >> $GITHUB_STEP_SUMMARY
