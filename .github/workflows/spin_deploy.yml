@@ -10,8 +10,8 @@
 name: Release to Spin Cloud
 
 on:
-push:
-  branches: [main]
+  push:
+    branches: [main]
 workflow_dispatch:
 
 permissions:
